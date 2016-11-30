@@ -20,17 +20,23 @@ document.getElementById('audio').addEventListener('ended', function(){
 #prevLink:hover, #prevLink:visited:hover { background: url(/html/images/prevlabel.gif) left 15% no-repeat; }
 #nextLink:hover, #nextLink:visited:hover { background: url(/html/images/nextlabel.gif) right 15% no-repeat; }
 </script>
- --><div class="page">
+ -->
+ <div class="page">
 	<div class="left_widget"><img class="ds" src="html/images/tambura.png" alt="Tambura"/></div>
-	<div class="right_widget" style="min-height: 170em;">
+	<div class="right_widget" style="min-height: auto;">
 		<span class="title">Devagitam</span>
+<!--
 		<img class="yn" src="html/images/yn.png" alt="design"/><br />
 		<span class="name">
 			Sri H. Yoganarasimham<br />
 			<span class="small_name">(1897-1971)</span>
 		</span>
+-->
+<!--
 		<img class="ds" src="html/images/bg.png" alt="design"/>
-		<p class="event"><marquee direction="right">Upcoming Event</marquee></p>		
+-->
+<br/><br/>
+		<p class="event">Upcoming Event</p>		
 		<p class="news"><span class="event_title">Fifth Anniversary of<br /> 
 						Devagitam Charitable Trust(R), Mysuru<br />
 						1st and 2nd October, 2016</span>
@@ -72,28 +78,147 @@ document.getElementById('audio').addEventListener('ended', function(){
 	</div>
 	<div id="headnav">
 		<ul>
-			<li><a href="#">Site Map</a></li>
+			<li><a href="#">About</a></li>
 			<li>|</li>
-			<li><a href="html/terms.html">Terms of Use</a></li>
+			<li><a href="#">Events</a></li>
 			<li>|</li>
-			<li><a href="html/contact.html">Contact us</a></li>
+			<li><a href="#">Projects</a></li>
+			<li>|</li>
+			<li><a href="#">Picture gallery</a></li>
+			<li>|</li>
+			<li><a href="#">get involved</a></li>
+			<li>|</li>
+			<li><a href="html/contact.html">Contact us</a></li>	
 		</ul>
 	</div>
 	<div class="header">
 		<ul>
 			<li><a class="active" href="#">home</a></li>
-			<li><a href="html/about.html">about</a></li>
-			<li><a href="html/compositions.html">compositions</a></li>
-			<li><a href="html/books.html">books</a></li>
-<!-- 			<li><a href="html/music.html">music</a></li>
-			<li><a href="html/gallery.html">picture gallery</a></li>
+			<li><a href="#">H Yoganarasimham</a></li>
+			<li><a href="#">HY Saraswathi</a></li>
+			<li><a href="html/books.html">Publications</a></li>
+			<li><a href="html/music.html">HY’s Compositions</a></li>
+			<!-- 		<li><a href="html/gallery.html">picture gallery</a></li>
  -->		</ul>
 	</div>
 	<div class="mainbody">
 		<p class="title">Welcome to Devagitam</p>
 		<p>Welcome to the world of chaste Karnatak music of the modern composer Sri H. Yoganarasimham!</p><br />
 		<p>Yoganarasimham (1897-1971) is a composer of rare merit in whom musical excellence and lyrical beauty find a happy union, as do classicism and modernity.</p><br />
+<!--
 		<p>This website – <span class="italics">Devagitam</span> – is dedicated to preserving and propagating his compositions. It is like a modern equivalent of a dedicated internship with a guru, getting to know him and his music as inseparable parts of a whole. To this end, the website is developed with the following features:</p><br />
+-->
+		<p class="mainimg">
+		<img src="html/images/yn.png" alt="design"/>
+		<img src="html/images/p.png" alt="design"/>
+		</p><br />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#div1").show();
+ $("#div2").hide();
+ $("#div3").hide();
+    $("#para2").click(function(){
+        $("#div1").hide();
+        $("#div3").hide();
+        $("#div2").show();
+    });
+	 $("#para3").click(function(){
+        $("#div1").hide();
+        $("#div3").show();
+        $("#div2").hide();
+    });
+	 $("#para1").click(function(){
+        $("#div1").show();
+        $("#div3").hide();
+        $("#div2").hide();
+    });
+});
+</script>
+<div class="landingpage">
+<div class="get_involved">
+<h3>Get Involved</h3>
+</div>
+<div class="tab">
+<ul>
+<li class="bgcolor"><a style="cursor:pointer" id="para1">Easy Reader</a></li>
+<li class="bgcolor"><a style="cursor:pointer" id="para2">Publication</a></li>
+<li class="bgcolor"><a style="cursor:pointer" id="para3">Events</a></li>
+</ul>
+<div id="div1">
+<p><a href="html/books/art_1.pdf" target="_blank">Sri Tyagaraja<br />The Testament of Indian Music</a></p>
+<p><a href="html/books/art_2.pdf" target="_blank">Gayana Samrajya</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+
+</div>
+<div id="div2">
+<p><a href="html/books/book_4.pdf" target="_blank">ಸಂಗೀತದ ಸಿರಿ ಎಚ್. ಯೋಗನರಸಿಂಹಂ <br/>ಜನ್ಮ ಶತಾಬ್ದಿ ಸ್ಮರಣೆ</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+</div>
+
+<div id="div3">
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+<p><a href="">Test</a></p>
+</div>
+</div>
+</div>
+
+<br/>
+<br/>
+<div>
+	<div class="photobanner">
+      <!-- Each image is 350px by 233px -->
+    	<img class="first" src="html/gallery/thumbs/003.jpg" alt="" />
+    	<img src="html/gallery/thumbs/004.jpg" alt="" />
+    	<img src="html/gallery/thumbs/005.jpg" alt="" />
+    	<img src="html/gallery/thumbs/006.jpg" alt="" />
+    	<img src="html/gallery/thumbs/007.jpg" alt="" />
+    	<img src="html/gallery/thumbs/008.jpg" alt="" />
+    	<img src="html/gallery/thumbs/009.jpg" alt="" />
+    </div>
+</div>
+<!--
+    	
+    	<img src="html/gallery/thumbs/010.jpg" alt="" />
+    	<img src="html/gallery/thumbs/011.jpg" alt="" />
+    	<img src="html/gallery/thumbs/012.jpg" alt="" />
+    	<img src="html/gallery/thumbs/013.jpg" alt="" />
+    	<img src="html/gallery/thumbs/014.jpg" alt="" />
+    	<img src="html/gallery/thumbs/015.jpg" alt="" />
+-->
+
+
+<!--
+<div class="img">
+  <a target="_blank" href="html/gallery/thumbs/010.jpg">
+    <img src="html/gallery/thumbs/010.jpg" alt="Trolltunga Norway" width="300" height="200">
+  </a>
+</div>
+
+<div class="img">
+  <a target="_blank" href="html/gallery/thumbs/011.jpg">
+    <img src="html/gallery/thumbs/011.jpg" alt="Forest" width="600" height="400">
+  </a>
+</div>
+
+<div class="img">
+  <a target="_blank" href="html/gallery/thumbs/012.jpg">
+    <img src="html/gallery/thumbs/012.jpg" alt="Northern Lights" width="600" height="400">
+  </a>
+</div>
+	
+</div>
+-->
+<!--
 		<ul class="open_para">
 			<li>all compositions in one place with full text and notation in Kannada, Devanagari and English</li>
 			<li>can listen to some of the compositions and download them</li>
@@ -114,8 +239,9 @@ document.getElementById('audio').addEventListener('ended', function(){
 		<p>Having spent a lifetime in the pursuit of the Muse, Yoganarasimham started composing toward the end of his life, giving shape to the extraordinary musical experience he had amassed. His compositions are not large in number, only thirty-five in all, but each one of them excels in its class. He has composed in Sanskrit, Telugu and Kannada, languages in which he had great scholarship and felicity of expression. His compositions consist of a svarajati, tanavarnas, kritis, raagamalikas, tillanas, padams and javalis.</p><br />
 		<p>Yoganarasimham’s compositions came to national attention when the queen of music, M.S. Subbulakshmi, drawn by their beauty and excellence, rendered some of them in a cassette tape brought out in 1986. She subsequently sang them in many of her concerts. She particularly made the Ranjani kriti <span class="italics">‘sada saranganayane’</span> a favourite of listeners and musicians not only in India but wherever the Indian diaspora has spread. Since then many eminent musicians have sung his kritis in their concerts.</p><br />
 		<p><a href='html/gallery/main/006.jpg' data-lightbox="image-1" data-title="Back row: HY couple with son Narayan Dutt, middle row: neighbours and daughter Neeraja Achutarao, front row : son HY Mukunda"><img class="p_image_left" src="html/gallery/thumbs/006.jpg" alt="Back row: HY couple with son Narayan Dutt, middle row: neighbours and daughter Neeraja Achutarao, front row : son HY Mukunda"/></a>Yoganarasimham passed away in 1971, at the age of 74, surrounded by a large circle of family and beloved friends.
-		He was a great <span class="italics">rasika,</span> and had won the respect of musical cognoscenti. A life long friend, Professor V. Sitaramayya, <a href='html/gallery/main/010.jpg' data-lightbox="image-1" data-title="HY in the centre, in front of Veda Patha shala"><img class="p_image_right" src="html/gallery/thumbs/010.jpg" alt="HY in the centre, in front of Veda Patha shala"/></a> one of the most renowned scholars and teachers of Mysore University, recalls him as one who seemed to have been born on this earth only to pursue music and literature.</p><br />
-	</div>
+		He was a great <span class="italics">rasika,</span> and had won the respect of musical cognoscenti. A life long friend, Professor V. Sitaramayya, <a href='html/gallery/main/010.jpg' data-lightbox="image-1" data-title="HY in the centre, in front of Veda Patha shala"><img class="p_image_right" src="html/gallery/thumbs/010.jpg" alt="HY in the centre, in front of Veda Patha shala"/></a> one of the most renowned scholars and teachers of Mysore University, recalls him as one who seemed to have been born on this earth only to pursue music and literature.</p><br />-->
+</div>
+
 	<div class="footer">
 		&copy;2011 Devagitam Trust. All Rights Reserved.<br />
 		<p class="credit"><a href="http://www.srirangadigital.com/" target="_blank"><img src="html/images/sriranga.png" alt="logo"/></a>Site designed and maintained by <a href="http://www.srirangadigital.com/" target="_blank">Sriranga</a></p>
